@@ -1,5 +1,6 @@
 store/
 __pycache__/
 .vscode/
+bring-thermal-printer/
 
 secret.py
