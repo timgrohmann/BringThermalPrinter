@@ -1,0 +1,5 @@
+store/
+__pycache__/
+.vscode/
+
+secret.py
