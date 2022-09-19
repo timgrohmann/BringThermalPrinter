@@ -26,3 +26,5 @@ Additionally, you may need to update the USB-Settings in `BringThermalPrinter.py
 To print directly via your thermal printer, execute `python BringThermalPrinter.py`.
 If you want to see a preview, use `python BringThermalPrinter.py -file` to render the
 output to a PNG-File.
+
+You may need to install a compatible `libusb-win32` Driver. Please use _Zadig_.

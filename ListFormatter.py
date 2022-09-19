@@ -38,7 +38,7 @@ class ListFormatter():
         groups = OrderedDict.fromkeys(ListFormatter.SECTION_ORDERING)
         for item in purchase_list:
             section = self.section_for_article(item['name'], list_details)
-            if section is None:
+            if section is None or section == "":
                 section = "Eigene Artikel"
             if groups[section] is not None:
                 groups[section].append(item)

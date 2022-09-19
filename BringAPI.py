@@ -3,7 +3,7 @@ from FileHelper import FileHelper
 import jwt
 import time
 import secret
-
+import urllib.parse
 
 class BringAPI():
     BASE_URL = 'https://api.getbring.com/rest/v2/'
@@ -28,9 +28,9 @@ class BringAPI():
             'email': email,
             'password': password
         }
-
         auth = requests.post(
             BringAPI.BASE_URL + 'bringauth', content).json()
+        print(auth)
         FileHelper.save_file("auth", auth)
         return auth
 
